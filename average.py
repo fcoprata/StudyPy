@@ -6,3 +6,6 @@ for n in range(n):
     lista.append(num)
 media = sum(lista)/len(lista)
 print('A média é de {}'.format(media))
+
+#Para executar a questão com expertise, necessitei usar recursos obtidos
+#nas aulas de tuplas e listas
