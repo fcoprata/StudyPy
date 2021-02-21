@@ -14,9 +14,9 @@ class Calculadora:
         return a * b
     def div(self,a,b):
         return a / b
-
-calculadora = Calculadora()
-print(calculadora.soma(n1,n2))
-print(calculadora.mult(n1,n2))
-print(calculadora.div(n1,n2))
-print(calculadora.sub(n1,n2))
+if __name__ == '__main__':
+    calculadora = Calculadora()
+    print(calculadora.soma(n1,n2))
+    print(calculadora.mult(n1,n2))
+    print(calculadora.div(n1,n2))
+    print(calculadora.sub(n1,n2))

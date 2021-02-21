@@ -13,8 +13,9 @@ class Calculadora:
     def div(self):
         return self.a / self.b
 
-calculadora = Calculadora(10,2)
-print(calculadora.soma())
-print(calculadora.mult())
-print(calculadora.div())
-print(calculadora.sub())
+if __name__ == "__main__":
+    calculadora = Calculadora(10,2)
+    print(calculadora.soma())
+    print(calculadora.mult())
+    print(calculadora.div())
+    print(calculadora.sub())
