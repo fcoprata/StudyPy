@@ -1,3 +1,4 @@
+import shutil
 def write(texto):
     diretorio = 'C:/Code/Study.py/notas.txt'
     arquivo = open(diretorio, 'w')
@@ -29,7 +30,15 @@ def media_notas(nome_arquivo):
         print(average(lista_notas))
         lista_media.append({aluno:average(lista_notas)})
     return lista_media
+
+def copia_arq(nome_arquivo):
+    shutil.copy(nome_arquivo,'C:/Code/Study.py/nota_alunos.txt')
+
+def move(nome_arquivo):
+    shutil.move(nome_arquivo,'C:/Code/')
+
 if __name__ == '__main__':
-    lista_media = media_notas('notas.txt')
-    print(lista_media)
+    #copia_arq('notas.txt')
+    move('notas.txt')
+
 
